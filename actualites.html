@@ -1,64 +1,72 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annonces & Actualités - Éclaireurs de Communion</title>
+    <title>Annonces & Actualités — Éclaireurs de Communion</title>
     <style>
-        .card-actu:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f9f9f9; }
+        header { background-color: #1a1a1a; padding: 15px 20px; position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.25rem; font-weight: bold; color: #ffffff; text-decoration: none; }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h1 { color: #2c3e50; font-size: 2rem; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        h3 { color: #7f8c8d; font-weight: 400; margin-top: -10px; }
+        .news-card { background: #fdfdfd; border: 1px solid #eef2f3; border-left: 4px solid #2c3e50; padding: 20px; margin-top: 30px; border-radius: 4px; }
+        .date { color: #e67e22; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin: 0 0 5px 0; }
+        .news-card h4 { margin: 0 0 10px 0; color: #2c3e50; font-size: 1.3rem; }
+        .slide-list { background: #f9f9f9; padding: 15px; border-radius: 4px; font-size: 0.95rem; }
     </style>
 </head>
-<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fcfcfc; color: #333333;">
+<body>
 
-    <header style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-entraide.jpg') no-repeat center/cover; padding: 20px 20px 40px 20px; text-align: center; color: #ffffff;">
-        <nav style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.2); margin-bottom: 20px;">
-            <a href="index.html" style="color: #ffffff; font-weight: bold; font-size: 1.2rem; text-decoration: none;">🕊️ Éclaireurs de Communion</a>
-            <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; flex-wrap: wrap;">
-                <li><a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Accueil</a></li>
-                <li><a href="benevoles.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Bénévoles</a></li>
-                <li><a href="demandeurs.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Demander de l'aide</a></li>
-                <li><a href="partenaires.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Partenaires</a></li>
-            </ul>
-        </nav>
-        <h1 style="font-size: 2.3rem; margin-bottom: 10px;">Annonces Paroissiales & Vie Communautaire</h1>
-        <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">Restez connecté aux dernières actualités, événements et partages de notre fraternité.</p>
-    </header>
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Éclaireurs de Communion</a>
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; flex-wrap: wrap;">
+            <li><a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Accueil</a></li>
+            <li><a href="benevoles.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Bénévoles</a></li>
+            <li><a href="demandeurs.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Demander de l'aide</a></li>
+            <li><a href="partenaires.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Partenaires</a></li>
+            <li><a href="charte.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Charte</a></li>
+            <li><a href="statuts.html" style="color: #ffffff; text-decoration: none; font-weight: 500; opacity: 0.85;">Statuts</a></li>
+            <li><a href="actualites.html" style="color: #ffffff; text-decoration: none; font-weight: bold; opacity: 1; border-bottom: 2px solid #ffffff; padding-bottom: 2px;">Annonces</a></li>
+        </ul>
+    </div>
+</header>
 
-    <section style="padding: 40px 20px; max-width: 900px; margin: 0 auto;">
+<div class="container">
+    <h1>Annonces & Actualités</h1>
+    <h3>Suivez la vie et les partages de notre communauté</h3>
+
+    <!-- Article 1 : Le Sermon sur la montagne -->
+    <div class="news-card">
+        <p class="date">Ressource Enseignement</p>
+        <h4>Plan du Diaporama : Le Sermon sur la Montagne</h4>
+        <p>Retrouvez ci-dessous la trame et les points clés de notre récent parcours d'enseignement portant sur les chapitres 5 à 7 de l'Évangile de Matthieu.</p>
         
-        <!-- Alerte / À la une -->
-        <div style="background-color: #fff9f3; padding: 25px; border: 1px solid #ffe8d6; border-radius: 8px; margin-bottom: 40px; display: flex; gap: 15px; align-items: flex-start;">
-            <span style="font-size: 1.8rem;">📋</span>
-            <div>
-                <h3 style="margin: 0 0 10px 0; color: #b76e2c;">Mot de la semaine</h3>
-                <p style="margin: 0; color: #555; line-height: 1.6;">
-                    Retrouvez ici chaque semaine les annonces partagées lors des messes, les rendez-vous de prière ainsi que les appels urgents à l'entraide (matériel, visites de courtoisie).
-                </p>
-            </div>
+        <div class="slide-list">
+            <strong>Structure en 4 Grandes Parties :</strong>
+            <ul>
+                <li><strong>Partie 1 :</strong> L'Identité du Disciple (Le contexte & Les Béatitudes détaillées).</li>
+                <li><strong>Partie 2 :</strong> Le Cœur du Message (L'accomplissement de la Loi & L'amour radical envers les ennemis).</li>
+                <li><strong>Partie 3 :</strong> La Piété Authentique (Pratiquer sa foi dans le secret, le Notre Père & La confiance sans inquiétude).</li>
+                <li><strong>Partie 4 :</strong> Le Choix Concret (Refuser le jugement, la Règle d'or & Bâtir sa maison solidement sur le Roc).</li>
+            </ul>
         </div>
+    </div>
 
-        <!-- Grille des actualités -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-            
-            <div class="card-actu" style="background: white; border: 1px solid #eef0f2; padding: 20px; border-radius: 8px; transition: 0.3s;">
-                <span style="color: #666; font-size: 0.85rem;">28 Septembre 2026</span>
-                <h3 style="color: #0066cc; margin: 10px 0;">Lancement officiel du site internet</h3>
-                <p style="color: #555; font-size: 0.95rem; line-height: 1.5;">Notre réseau d'entraide numérique se dote d'un nouvel outil pour centraliser les inscriptions et simplifier la mise en relation.</p>
-            </div>
+    <!-- Article 2 : Lancement officiel -->
+    <div class="news-card">
+        <p class="date">Vie de la Mission</p>
+        <h4>Lancement de la plateforme Éclaireurs de Communion</h4>
+        <p>Nous avons la joie de mettre en ligne notre tout nouvel espace d'entraide. Que vous souhaitiez offrir un peu de votre temps comme <strong>bénévole</strong>, exprimer un <strong>besoin de soutien</strong> ou rejoindre notre réseau de <strong>partenaires</strong>, les formulaires sécurisés sont désormais opérationnels dans chaque section.</p>
+    </div>
+</div>
 
-            <div class="card-actu" style="background: white; border: 1px solid #eef0f2; padding: 20px; border-radius: 8px; transition: 0.3s;">
-                <span style="color: #666; font-size: 0.85rem;">Prochainement</span>
-                <h3 style="color: #0066cc; margin: 10px 0;">Réunion de formation des Éclaireurs</h3>
-                <p style="color: #555; font-size: 0.95rem; line-height: 1.5;">Une rencontre fraternelle sera organisée pour guider nos bénévoles sur l'accompagnement numérique des aînés.</p>
-            </div>
+<footer style="background-color: #1a1a1a; color: #ffffff; padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 60px;">
+    <p>&copy; 2026 — Éclaireurs de Communion</p>
+</footer>
 
-        </div>
-    </section>
-
-    <footer style="background-color: #1a1a1a; color: #ffffff; padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 60px;">
-        <p>&copy; 2026 — Éclaireurs de Communion</p>
-    </footer>
 </body>
 </html>
