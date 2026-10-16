@@ -1,0 +1,107 @@
+
+
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Éclaireurs de Communion</title>
+    <link rel="stylesheet" href="style.css">
+   <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
+        header { background-color: #1a1a1a; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 20px; }
+        nav { display: flex; flex-direction: column; gap: 10px; max-width: 1100px; margin: 0 auto; align-items: center; }
+        @media(min-width: 992px) { nav { flex-direction: row; justify-content: space-between; } }
+        .logo { font-weight: bold; font-size: 1.3rem; color: #ffffff; text-decoration: none; margin-bottom: 10px; }
+        @media(min-width: 992px) { .logo { margin-bottom: 0; } }
+        .nav-links { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; justify-content: center; }
+        .nav-links a { text-decoration: none; color: #ccc; font-size: 0.9rem; transition: color 0.2s; padding: 2px 4px; }
+        .nav-links a:hover { color: #ffffff; }
+        .nav-links .active { color: #ffffff; font-weight: bold; border-bottom: 2px solid #ffffff; }
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: #fffaf0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #c2410c; }
+        h1 { color: #1a1a1a; font-size: 2rem; margin-top: 0; }
+        h3 { color: #444; font-weight: 600; }
+        h4 { color: #1a1a1a; border-bottom: 2px solid #fed7aa; padding-bottom: 8px; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+        .details-section { margin: 40px 0 20px 0; padding: 20px; background-color: #fff7ed; border: 1px dashed #fed7aa; border-radius: 6px; text-align: center; }
+        footer { background-color: #1a1a1a; color: #ffffff; padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+<header>
+        <nav class="navbar">
+        <div class="nav-logo">
+	    <a href="index.html" class="logo">Éclaireurs de Communion</a>
+             </div>
+       	     <div class="nav-container-right">
+		 <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="benevoles.html">Bénévoles</a></li>
+                <li><a href="demande_d_aide.html">Demander de l'aide</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="actions.html">Nos Actions</a></li>
+                <li><a href="actualites.html">Actualités</a></li>              
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+       
+	 <!-- Menu de traduction écrit en clair dans le code -->
+            <div class="custom-translator" style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
+                <span style="font-size: 0.9rem; color: #555; font-weight: bold; margin-right: 5px;">Langue :</span>
+                <div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+            </div>
+        </div>
+	</nav>
+    </header>
+
+    <!-- 1. L'emplacement où le menu va s'afficher tout seul -->
+    <div id="global-nav"></div>
+
+    <div class="page-container" style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif;">
+        <h1 style="color: #2c3e50; text-align: center; margin-bottom: 30px;">Dernières Nouvelles</h1>
+        
+        <article style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <span style="color: #7f8c8d; font-size: 0.9rem;">Mis à jour récemment — Octobre 2026</span>
+            <h2 style="color: #2c3e50; margin: 10px 0;">Lancement de notre nouveau site web</h2>
+            <p style="color: #555; line-height: 1.6;">Notre plateforme en ligne est désormais opérationnelle sur GitHub Pages ! Elle permet de mieux coordonner nos équipes et de simplifier l'accès à nos formulaires pour les bénévoles et nos partenaires.</p>
+        </article>
+
+        <article style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <span style="color: #7f8c8d; font-size: 0.9rem;">Prochainement</span>
+            <h2 style="color: #2c3e50; margin: 10px 0;">Développement de nos actions d'entraide</h2>
+            <p style="color: #555; line-height: 1.6;">De nouveaux projets solidaires sont en cours de préparation pour renforcer notre présence auprès de ceux qui nous entourent. Restez connectés pour découvrir les prochaines étapes.</p>
+        </article>
+    </div>
+
+    <!-- 2. Le script magique qui va charger le fichier menu.html -->
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('global-nav').innerHTML = data;
+            });
+    </script>
+
+     
+    <!-- 3. Pied de page -->
+    <footer>
+        <p>🕊 Éclaireurs de Communion — Initiative d'entraide bénévole et solidaire.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem; color: #bdc3c7;">© 2026 — Tous droits réservés.</p>
+    </footer>
+
+    <!-- 4. Moteur Google Traduction (Français, Anglais, Hébreu, Russe) -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr', 
+        includedLanguages: 'en,he,ru,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//://google.com"></script>
+
+
+</body>
+</html>

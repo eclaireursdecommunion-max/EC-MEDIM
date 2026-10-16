@@ -1,0 +1,115 @@
+
+
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejoignez les Éclaireurs de Communion — Bénévoles</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
+        header { background-color: #1a1a1a; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 20px; }
+        nav { display: flex; flex-direction: column; gap: 10px; max-width: 1100px; margin: 0 auto; align-items: center; }
+        @media(min-width: 992px) { nav { flex-direction: row; justify-content: space-between; } }
+        .logo { font-weight: bold; font-size: 1.3rem; color: #ffffff; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; justify-content: center; }
+        .nav-links a { text-decoration: none; color: #ccc; font-size: 0.9rem; transition: color 0.2s; }
+        .nav-links a:hover { color: #ffffff; }
+        .nav-links .active { color: #ffffff; font-weight: bold; border-bottom: 2px solid #ffffff; }
+        
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: #fffdf5; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #1a1a1a; }
+        h1 { color: #1a1a1a; font-size: 2rem; margin-top: 0; }
+        h4 { color: #1a1a1a; border-bottom: 2px solid #eedebe; padding-bottom: 8px; }
+        
+        /* Style du Bandeau Premium et du Rebond */
+        .premium-banner { background: linear-gradient(135deg, #1a1a1a, #333333); color: white; padding: 25px; border-radius: 8px; margin-top: 30px; text-align: center; position: relative; overflow: hidden; }
+        .premium-banner::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent); animation: shine 4s infinite; }
+        @keyframes shine { 0% { left: -100%; } 100% { left: 200%; } }
+        
+        .btn-tally { display: inline-block; background-color: #ffffff; color: #1a1a1a; text-decoration: none; padding: 14px 28px; font-weight: bold; border-radius: 4px; margin: 15px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: transform 0.2s; }
+        .btn-tally:hover { transform: scale(1.03); }
+        
+        .rebond-box { background-color: rgba(255,255,255,0.08); padding: 15px; border-radius: 6px; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); }
+        .rebond-links { display: flex; gap: 15px; justify-content: center; margin-top: 10px; flex-wrap: wrap; }
+        .rebond-links a { color: #fff; background-color: rgba(255,255,255,0.15); padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 0.85rem; }
+        .rebond-links a:hover { background-color: rgba(255,255,255,0.3); }
+        
+        footer { background-color: #1a1a1a; color: #ffffff; padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+        <div class="nav-logo">
+	    <a href="index.html" class="logo">Éclaireurs de Communion</a>
+             </div>
+       	     <div class="nav-container-right">
+		 <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="benevoles.html">Bénévoles</a></li>
+                <li><a href="demande_d_aide.html">Demander de l'aide</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="actions.html">Nos Actions</a></li>
+                <li><a href="actualites.html">Actualités</a></li>              
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+       
+	 <!-- Menu de traduction écrit en clair dans le code -->
+            <div class="custom-translator" style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
+                <span style="font-size: 0.9rem; color: #555; font-weight: bold; margin-right: 5px;">Langue :</span>
+                <div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+            </div>
+        </div>
+	</nav>
+    </header>
+
+    <div class="container">
+        <h1>Rejoignez les Éclaireurs de Communion</h1>
+        <p>Être Éclaireur de Communion, c'est choisir de rompre l'isolement et de tendre la main de manière concrète à ceux qui traversent une période difficile. Votre présence peut tout changer.</p>
+
+        <h4>Comment pouvez-vous agir ?</h4>
+        <ul>
+            <li><strong>Écoute et Présence :</strong> Visiter les personnes isolées ou âgées.</li>
+            <li><strong>Soutien Pratique :</strong> Partage de compétences et entraide fraternelle.</li>
+            <li><strong>Logistique :</strong> Participer à l'organisation de nos actions et événements.</li>
+	</ul>
+
+        <!-- BANDEAU PREMIUM ANIME AVEC REBOND -->
+        <div class="premium-banner">
+            <h3>Prêt à faire rayonner la communion ?</h3>
+            <p>Cliquez ci-dessous pour ouvrir votre fiche d'engagement bénévole sécurisée.</p>
+            
+            <a href="https://tally.so/r/eqXXEl" target="_blank" class="btn-tally">Ouvrir le formulaire Bénévole ↗</a>
+            
+            <div class="rebond-box">
+                <p style="margin: 0 0 10px 0; font-size: 0.95rem; font-style: italic;">"Merci pour votre engagement. Ensemble, nous renforçons la solidarité au sein de notre communauté."</p>
+                <p style="font-size: 0.85rem; color: #ccc; margin: 0;">Pendant que vous complétez le formulaire, découvrez également :</p>
+                <div class="rebond-links">
+                    <a href="charte.html">Notre Charte d'Éthique</a>
+                    <a href="actions.html">Nos Actions de Terrain</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Pied de page -->
+    <footer>
+        <p>🕊 Éclaireurs de Communion — Initiative d'entraide bénévole et solidaire.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem; color: #bdc3c7;">© 2026 — Tous droits réservés.</p>
+    </footer>
+
+    <!-- 4. Moteur Google Traduction (Français, Anglais, Hébreu, Russe) -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr', 
+        includedLanguages: 'en,he,ru,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//://google.com"></script>
+
+</body>
+</html>

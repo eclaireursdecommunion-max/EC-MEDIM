@@ -1,0 +1,103 @@
+
+
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Actions - Éclaireurs de Communion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
+        header { background-color: #1a1a1a; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 20px; }
+        nav { display: flex; flex-direction: column; gap: 10px; max-width: 1100px; margin: 0 auto; align-items: center; }
+        @media(min-width: 992px) { nav { flex-direction: row; justify-content: space-between; } }
+        .logo { font-weight: bold; font-size: 1.3rem; color: #ffffff; text-decoration: none; margin-bottom: 10px; }
+        @media(min-width: 992px) { .logo { margin-bottom: 0; } }
+        .nav-links { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; justify-content: center; }
+        .nav-links a { text-decoration: none; color: #ccc; font-size: 0.9rem; transition: color 0.2s; padding: 2px 4px; }
+        .nav-links a:hover { color: #ffffff; }
+        .nav-links .active { color: #ffffff; font-weight: bold; border-bottom: 2px solid #ffffff; }
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: #fffaf0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #c2410c; }
+        h1 { color: #1a1a1a; font-size: 2rem; margin-top: 0; }
+        h3 { color: #444; font-weight: 600; }
+        h4 { color: #1a1a1a; border-bottom: 2px solid #fed7aa; padding-bottom: 8px; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+        .details-section { margin: 40px 0 20px 0; padding: 20px; background-color: #fff7ed; border: 1px dashed #fed7aa; border-radius: 6px; text-align: center; }
+        footer { background-color: #1a1a1a; color: #ffffff; padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+     <header>      
+             <nav class="navbar">
+        <div class="nav-logo">
+	    <a href="index.html" class="logo">Éclaireurs de Communion</a>
+             </div>
+       	     <div class="nav-container-right">
+		 <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="benevoles.html">Bénévoles</a></li>
+                <li><a href="demande_d_aide.html">Demander de l'aide</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="actions.html">Nos Actions</a></li>
+                <li><a href="actualites.html">Actualités</a></li>              
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+       
+	 <!-- Menu de traduction écrit en clair dans le code -->
+            <div class="custom-translator" style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
+                <span style="font-size: 0.9rem; color: #555; font-weight: bold; margin-right: 5px;">Langue :</span>
+                <div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+            </div>
+        </div>
+	</nav>
+    </header>
+
+    <!-- Inclure ici votre barre de menu <nav> -->
+
+    
+            
+            
+	<div class="page-container" style="max-width: 1000px; margin: 40px auto; padding: 20px; font-family: sans-serif;">
+        <h1 style="color: #2c3e50; text-align: center; margin-bottom: 30px;">Nos Actions sur le Terrain</h1>
+        
+        <div class="actions-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <div class="action-card" style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #2980b9;">
+                <h3 style="color: #2980b9; margin-bottom: 10px;">Accompagnement & Écoute</h3>
+                <p style="color: #555; line-height: 1.6;">Soutien moral et orientation pour les personnes en situation d'isolement ou de vulnérabilité sociale.</p>
+            </div>
+            
+            <div class="action-card" style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #27ae60;">
+                <h3 style="color: #27ae60; margin-bottom: 10px;">Entraide Solidaire</h3>
+                <p style="color: #555; line-height: 1.6;">Organisation d'actions de partage de ressources, de collectes et de distribution pour répondre aux besoins essentiels.</p>
+            </div>
+
+            <div class="action-card" style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #f39c12;">
+                <h3 style="color: #f39c12; margin-bottom: 10px;">Communion & Partage</h3>
+                <p style="color: #555; line-height: 1.6;">Création de liens forts entre bénévoles et bénéficiaires à travers des rencontres fraternelles et des temps d'échanges.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Pied de page -->
+    <footer>
+        <p>🕊 Éclaireurs de Communion — Initiative d'entraide bénévole et solidaire.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem; color: #bdc3c7;">© 2026 — Tous droits réservés.</p>
+    </footer>
+
+    <!-- 4. Moteur Google Traduction (Français, Anglais, Hébreu, Russe) -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr', 
+        includedLanguages: 'en,he,ru,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//://google.com"></script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demander de l'aide — Éclaireurs de Communion</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
+        header { background-color: #1a1a1a; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 20px; }
+        nav { display: flex; flex-direction: column; gap: 10px; max-width: 1100px; margin: 0 auto; align-items: center; }
+        @media(min-width: 992px) { nav { flex-direction: row; justify-content: space-between; } }
+        .logo { font-weight: bold; font-size: 1.3rem; color: #ffffff; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; justify-content: center; }
+        .nav-links a { text-decoration: none; color: #ccc; font-size: 0.9rem; transition: color 0.2s; }
+        .nav-links a:hover { color: #ffffff; }
+        .nav-links .active { color: #ffffff; font-weight: bold; border-bottom: 2px solid #ffffff; }
+        
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: #f0f9ff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #0284c7; }
+        h1 { color: #1a1a1a; font-size: 2rem; margin-top: 0; }
+        h4 { color: #1a1a1a; border-bottom: 2px solid #bae6fd; padding-bottom: 8px; }
+        
+        /* Style du Bandeau Premium et du Rebond */
+        .premium-banner { background: linear-gradient(135deg, #0284c7, #0369a1); color: white; padding: 25px; border-radius: 8px; margin-top: 30px; text-align: center; position: relative; overflow: hidden; }
+        .premium-banner::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); animation: shine 4s infinite; }
+        @keyframes shine { 0% { left: -100%; } 100% { left: 200%; } }
+        
+        .btn-tally { display: inline-block; background-color: #ffffff; color: #0284c7; text-decoration: none; padding: 14px 28px; font-weight: bold; border-radius: 4px; margin: 15px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s; }
+        .btn-tally:hover { transform: scale(1.03); }
+        
+        .rebond-box { background-color: rgba(255,255,255,0.12); padding: 15px; border-radius: 6px; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.3); }
+        .rebond-links { display: flex; gap: 15px; justify-content: center; margin-top: 10px; flex-wrap: wrap; }
+        .rebond-links a { color: #fff; background-color: rgba(255,255,255,0.2); padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 0.85rem; }
+        .rebond-links a:hover { background-color: rgba(255,255,255,0.35); }
+        
+        footer { background-color: #1a1a1a; color: #ffffff; padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+         <nav class="navbar">
+        <div class="nav-logo">
+	    <a href="index.html" class="logo">Éclaireurs de Communion</a>
+             </div>
+       	     <div class="nav-container-right">
+		 <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="benevoles.html">Bénévoles</a></li>
+                <li><a href="demande_d_aide.html">Demander de l'aide</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="actions.html">Nos Actions</a></li>
+                <li><a href="actualites.html">Actualités</a></li>              
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+       
+	 <!-- Menu de traduction écrit en clair dans le code -->
+            <div class="custom-translator" style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
+                <span style="font-size: 0.9rem; color: #555; font-weight: bold; margin-right: 5px;">Langue :</span>
+                <div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+            </div>
+        </div>
+	</nav>
+    </header>
+
+    <div class="container">
+        <h1>Vous n'êtes pas seul : Demander de l'aide</h1>
+
+	<h2>Mission d'Entraide la Divine Miséricorde est à vos côtés</h2>
+        <p>Traverser une tempête fait partie de la vie. Aux Éclaireurs de Communion, nous croyons fermement qu'aucune détresse ne doit être portée dans la solitude totale.</p>
+
+        <h4>Ce que nous vous offrons :</h4>
+        <ul>
+            <li>Une oreille attentive, fraternelle et strictement confidentielle.</li>
+            <li>Une présence régulière pour vous épauler.</li>
+        </ul>
+
+        <!-- BANDEAU PREMIUM ANIME AVEC REBOND -->
+        <div class="premium-banner">
+            <h3>Déposer une demande d'aide fraternelle</h3>
+            <p>Votre démarche reste entièrement confidentielle. Cliquez ci-dessous pour formuler votre besoin.</p>
+            
+            <a href="https://tally.so/r/EkOWZB" target="_blank" class="btn-tally">Faire ma demande sécurisée ↗</a>
+            
+            <div class="rebond-box">
+                <p style="margin: 0 0 10px 0; font-size: 0.95rem; font-style: italic;">"Votre demande est bien prise en compte. Notre équipe de la Mission d'Entraide se mobilise pour vous répondre avec douceur et rapidité."</p>
+                <p style="font-size: 0.85rem; color: #e0f2fe; margin: 0;">En attendant notre retour, vous pouvez consulter :</p>
+                <div class="rebond-links">
+                    <a href="index.html">Retour à l'accueil</a>
+                    <a href="statut.html">Nos Statuts Officiels</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Pied de page -->
+    <footer>
+        <p>🕊 Éclaireurs de Communion — Initiative d'entraide bénévole et solidaire.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem; color: #bdc3c7;">© 2026 — Tous droits réservés.</p>
+    </footer>
+
+    <!-- 4. Moteur Google Traduction (Français, Anglais, Hébreu, Russe) -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr', 
+        includedLanguages: 'en,he,ru,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }    
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'fr', includedLanguages: 'en,he,ru,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element'); }
+    </script>
+    <script type="text/javascript" src="//://google.com"></script
+</body>
+</html>

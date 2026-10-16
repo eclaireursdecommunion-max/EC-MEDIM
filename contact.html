@@ -1,0 +1,306 @@
+
+
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Éclaireurs de Communion</title>
+    
+    <!-- Style CSS intégré pour correspondre au reste du site -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Barre de navigation générale (Navbar) */
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo a {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .nav-container-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #2980b9;
+        }
+
+        /* Conteneur Principal du Formulaire */
+        .contact-container {
+            background: #ffffff;
+            max-width: 950px;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+
+        /* Section Informations (Gauche) */
+        .contact-info {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 40px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+        }
+
+        .info-details .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .info-details .info-item span {
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        /* Section Formulaire (Droite) */
+        .contact-form {
+            padding: 40px;
+            width: 60%;
+        }
+
+        .contact-form h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #34495e;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            border-color: #2980b9;
+        }
+
+        /* Bouton d'envoi */
+        .submit-btn {
+            background: #2980b9;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #1b4f72;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 0.95rem;
+        }
+
+        /* Masquer la bannière supérieure Google Traduction */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+        body {
+            top: 0px !important;
+        }
+
+        /* Mode Responsive (Mobiles et Tablettes) */
+        @media (max-width: 992px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-container-right {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            .contact-container {
+                flex-direction: column;
+                width: 95%;
+            }
+            .contact-info, .contact-form {
+                width: 100%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Barre de navigation générale avec Langues -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">Éclaireurs de Communion</a>
+        </div>
+        <div class="nav-container-right">
+            <ul class="nav-links">
+                 <li><a href="index.html">Accueil</a></li>
+                <li><a href="benevoles.html">Bénévoles</a></li>
+                <li><a href="demande_d_aide.html">Demander de l'aide</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="actions.html">Nos Actions</a></li>
+                <li><a href="actualites.html">Actualités</a></li>              
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Menu de traduction écrit en clair -->
+            <div class="custom-translator" style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
+                <span style="font-size: 0.9rem; color: #555; font-weight: bold; margin-right: 5px;">Langue :</span>
+                <div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Section Formulaire de contact opérationnel avec Formspree -->
+    <div class="contact-container">
+        <!-- Gauche : Infos association -->
+        <div class="contact-info">
+            <h2>Restons connectés</h2>
+            <p>Une question ou un message spécifique à transmettre ? Écrivez-nous, notre équipe d'entraide vous répondra avec joie.</p>
+            
+            <div class="info-details">
+                <div class="info-item">
+                    <span>✉️</span>
+                    <p>contact@eclaireursdecommunion.org</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Droite : Formulaire -->
+        <div class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+            <form action="https://formspree.io/f/maeqpreb" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="nom" placeholder="Ex: Jean Dupont" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="_replyto" placeholder="Ex: jean.dupont@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet du message</label>
+                    <input type="text" id="subject" name="sujet" placeholder="De quoi s'agit-il ?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Envoyer le message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. Pied de page -->
+    <footer>
+        <p>🕊 Éclaireurs de Communion — Initiative d'entraide bénévole et solidaire.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem; color: #bdc3c7;">© 2026 — Tous droits réservés.</p>
+    </footer>
+
+    <!-- 4. Moteur Google Traduction (Français, Anglais, Hébreu, Russe) -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr', 
+        includedLanguages: 'en,he,ru,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//://google.com"></script>
+
+</body>
+</html>
